@@ -12,3 +12,7 @@ type UserRepository interface {
 	Save(user *models.User) error
 	Delete(user *models.User) error
 }
+
+type BookRepository interface {
+	Save(model *models.Book) error
+}

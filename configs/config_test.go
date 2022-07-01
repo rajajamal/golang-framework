@@ -15,7 +15,7 @@ func Test_Config_Debug(t *testing.T) {
 
 	Load()
 
-	assert.Equal(t, Env.Debug, true)
+	assert.Equal(t, Env.Debug, false)
 
 	err = godotenv.Overload(".env.test.debug-false")
 	if err != nil {
